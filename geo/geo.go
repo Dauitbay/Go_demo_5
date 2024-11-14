@@ -8,7 +8,7 @@ import (
 )
 
 type GeoData struct {
-	City string `json: "city`
+	City string `json:"city"` // size=16 (0x10), offset=0
 }
 
 func GetMyLocation(city string) (*GeoData, error) {
